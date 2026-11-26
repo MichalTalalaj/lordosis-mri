@@ -1,0 +1,23 @@
+# TODO: only after the must tier is complete.
+dataset: null
+angle_source: null
+angle_definition: null
+split: null
+backbone: null
+fine_tune_strategy: null
+last_n_blocks: null
+image_size: null
+batch_size: null
+gradient_accumulation_steps: null
+num_workers: null
+seed: null
+heads:
+  uncertainty: null
+  endplate: null
+  segmentation: null
+loss_weights:
+  angle: null
+  endplate: null
+  consistency: null
+  segmentation: null
+
