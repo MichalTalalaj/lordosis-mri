@@ -3,6 +3,7 @@
 !/data/**/
 !/data/**/.gitkeep
 !/data/README.md
+!/data/splits/*.json
 /outputs/
 .venv/
 .uv-cache/

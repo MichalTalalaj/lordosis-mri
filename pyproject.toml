@@ -7,7 +7,7 @@ name = "lordosis-mri"
 version = "0.1.0"
 description = "Direct lumbar lordosis angle regression from sagittal MRI."
 readme = "README.md"
-requires-python = ">=3.12,<3.13"
+requires-python = ">=3.12"
 dependencies = [
     "numpy",
     "pandas",

@@ -1,5 +1,6 @@
 """Check reproducibility on CPU only."""
 
+import os
 import random
 
 import numpy as np
@@ -13,8 +14,10 @@ def test_seed_repeats_all_cpu_random_streams(monkeypatch: pytest.MonkeyPatch) ->
     """Resetting the same seed repeats Python, NumPy and torch draws."""
     previous = torch.are_deterministic_algorithms_enabled()
     monkeypatch.setattr(torch.cuda, "is_available", lambda: False)
+    monkeypatch.delenv("CUBLAS_WORKSPACE_CONFIG", raising=False)
     try:
         seed_everything(42, deterministic=True)
+        assert os.environ["CUBLAS_WORKSPACE_CONFIG"] == ":4096:8"
         first = (random.random(), np.random.rand(4), torch.rand(4))
         seed_everything(42, deterministic=True)
         second = (random.random(), np.random.rand(4), torch.rand(4))
