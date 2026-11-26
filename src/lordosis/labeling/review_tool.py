@@ -1,6 +1,12 @@
-"""Review/correct endplates and save versioned human labels with review times in the future."""
+"""STEP 1: plan local matplotlib review of AI-assisted angle labels."""
 
 
 def review_labels(config: dict[str, object]) -> None:
-    """Review/correct endplates and save versioned human labels with review times in the future."""
-    raise NotImplementedError("pending: lecturer confirmation of labeling approach pending")
+    """Plan slice, endplate-line and angle display with draggable endpoints.
+
+    Keyboard actions accept or exclude with a reason, navigate cases and autosave.
+    Save a new human-label CSV version with accepted/corrected/excluded status,
+    annotator, seconds spent, timestamp and notes. Support second-annotator review
+    of a subset for inter-rater agreement, locally on Windows and Linux.
+    """
+    raise NotImplementedError("pending: human review after lecturer confirmation")
