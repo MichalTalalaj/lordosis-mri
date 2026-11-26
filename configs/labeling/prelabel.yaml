@@ -1,0 +1,24 @@
+# Placeholder only; no pre-labelling or review logic is implemented.
+dataset: spider  # expected, confirm 27 Nov
+angle_definition: L1-S1  # expected, confirm 27 Nov
+angle_source: ai_assisted  # expected, confirm 27 Nov
+s1_approximation: lowest_ivd_inferior_border  # expected, confirm 27 Nov
+manifest: null
+processed_dir: null
+prelabels: null
+overlays_dir: null
+method_version: null
+in_plane_spacing_mm: 0.5
+image_size: 256
+endplate_fitting:
+  method: null
+  l1_border: null
+  s1_border: null
+  expected_vertebra_count: null
+  flag_criteria: null
+review:
+  output: null
+  annotator: null
+  coverage: null  # confirm all cases vs test set plus sample on 27 Nov
+  autosave: null
+  second_annotator_subset: null

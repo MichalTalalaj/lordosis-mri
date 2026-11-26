@@ -1,0 +1,27 @@
+# Placeholder only; paths and label values require confirmation from real data.
+dataset: spider  # expected, confirm 27 Nov
+angle_definition: L1-S1  # expected, confirm 27 Nov
+angle_source: ai_assisted  # expected, confirm 27 Nov
+s1_approximation: lowest_ivd_inferior_border  # expected, confirm 27 Nov
+data_root: null  # planned: LORDOSIS_DATA_ROOT, default ./data
+raw_dir: null
+manifest: null
+processed_dir: null
+labels: null
+mask_labels:
+  vertebrae: null
+  ivd: null
+  spinal_canal: null
+split:
+  path: null
+  test_source: null  # proposed: official validation studies
+  val_fraction: null
+  seed: null
+preprocessing:
+  orientation: null
+  slice_selection: null
+  in_plane_spacing_mm: 0.5
+  image_size: 256
+  intensity_percentiles: null
+  normalization: null
+  padding: null

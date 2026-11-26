@@ -1,0 +1,37 @@
+# Placeholder only; this does not run training yet.
+dataset: spider  # expected, confirm 27 Nov
+angle_definition: L1-S1  # expected, confirm 27 Nov
+angle_source: ai_assisted  # expected, confirm 27 Nov
+s1_approximation: lowest_ivd_inferior_border  # expected, confirm 27 Nov
+manifest: null
+labels: null
+split: null
+method: null  # planned: resnet18
+pretrained_weights: null
+seed: null
+deterministic: null
+num_workers: null  # planned: default_num_workers()
+image_size: 256
+in_plane_spacing_mm: 0.5
+allow_hflip: false
+augmentation:
+  rotation_deg: null
+  translation: null
+  uniform_scale: null
+  intensity: null
+batch_size: null
+epochs: null
+optimizer: null
+learning_rate: null
+weight_decay: null
+scheduler: null
+warmup_epochs: null
+loss: null
+early_stopping_metric: null
+patience: null
+precision: null
+checkpoint: null
+category_thresholds: null
+examples_per_category: null
+run_name: null
+output_dir: null
