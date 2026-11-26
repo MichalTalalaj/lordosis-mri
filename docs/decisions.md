@@ -13,8 +13,9 @@
   MPS/CPU use fp32 (dtype None). Future fp16 training must use GradScaler.
 - 26 Nov 2026: requirements-colab.txt is generated from core and all optional
   dependencies, excluding torch/torchvision. It uses unpinned optional packages
-  so Colab can retain its existing torch; tier implementations remain deferred.
+  so Colab can retain its existing torch; the setup notebook constrains both
+  installed torch versions during pip resolution to prevent replacement.
+  Tier implementations remain deferred.
 - 26 Nov 2026: Colab defaults to the current public GitHub remote. Optional
-  `GITHUB_TOKEN` in Colab Secrets is passed via a temporary git credential helper,
+  `GITHUB_TOKEN` in Colab Secrets is passed via a temporary git askpass helper,
   never stored in the clone URL or printed. Drive data location is editable.
-
