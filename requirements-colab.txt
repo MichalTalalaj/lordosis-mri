@@ -1,4 +1,4 @@
-# Generated from pyproject.toml core + extras; Colab supplies torch/torchvision.
+# Core runtime dependencies; Colab supplies torch/torchvision.
 numpy
 pandas
 SimpleITK
@@ -8,10 +8,3 @@ scipy
 matplotlib
 pyyaml
 tqdm
-timm
-peft
-monai
-pytest
-ruff
-jupyter
-ipykernel

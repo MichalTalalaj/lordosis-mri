@@ -23,8 +23,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-main = ["timm", "peft"]
-stretch = ["monai"]
 dev = ["pytest", "ruff", "jupyter", "ipykernel"]
 
 [tool.hatch.build.targets.wheel]

@@ -1,4 +1,4 @@
-"""Export baseline metrics, predictions, diagnostic plots and Grad-CAM in the future."""
+"""Export MAE, RMSE, bias, predictions and required validation plots in the future."""
 
 import argparse
 from collections.abc import Sequence
