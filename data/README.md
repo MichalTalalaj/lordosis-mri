@@ -9,4 +9,3 @@ Dataset, labels, angle definition and split await agreement with the lecturer
 and Topic 6. Download instructions will follow that decision.
 Use `LORDOSIS_DATA_ROOT` for data location (default: `./data`).
 Only this README and empty-directory `.gitkeep` files belong in git at this stage.
-

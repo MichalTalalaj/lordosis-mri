@@ -11,4 +11,3 @@ This is an outline to complete with report references, not a completed checklist
 - [ ] Patient and public involvement (item 19)
 - [ ] Results (items 20–24)
 - [ ] Discussion (items 25–27)
-

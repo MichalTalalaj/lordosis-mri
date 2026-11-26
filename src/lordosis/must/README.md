@@ -8,4 +8,3 @@ Status: **not started**. Python modules are explicit stubs only.
 Tiers must be implemented in order: must → main → stretch.
 CLI help: `uv run python -m lordosis.must.train --help`.
 Training/evaluation raise `NotImplementedError`.
-

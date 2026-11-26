@@ -20,4 +20,3 @@ loss_weights:
   endplate: null
   consistency: null
   segmentation: null
-

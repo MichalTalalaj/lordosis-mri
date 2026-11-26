@@ -16,4 +16,3 @@ loss: null
 patience: null
 category_thresholds: null
 allow_hflip: false
-
