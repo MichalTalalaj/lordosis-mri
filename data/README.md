@@ -1,11 +1,21 @@
-# Data
+# SPIDER data
 
-Candidate datasets, both **pending decision**:
+Expected dataset: **SPIDER**, [Zenodo record 10159290](https://zenodo.org/records/10159290),
+licence **CC BY 4.0**. Confirmation is expected on 27 Nov 2026.
 
-- SPIDER (Zenodo 10159290), 3D MHA volumes.
-- Mendeley Composite (k3b363f3vz v2), mid-sagittal images and masks.
+Download pending: `scripts/download_spider.py` is a stub. Setup and tests do not
+download data. The expected raw-data folder is `data/raw/spider/`.
 
-Dataset, labels, angle definition and split await agreement with the lecturer
-and Topic 6. Download instructions will follow that decision.
-Use `LORDOSIS_DATA_ROOT` for data location (default: `./data`).
-Only this README and empty-directory `.gitkeep` files belong in git at this stage.
+Data paths will use `LORDOSIS_DATA_ROOT` (default `./data`):
+
+- `raw/spider/`: source MRI volumes, masks and overview table.
+- `processed/`: manifest and cached mid-sagittal slices.
+- `labels/`: versioned automatic pre-labels and reviewed human angles.
+- `splits/`: patient-level split JSON, committed only once frozen.
+
+Check actual mask label values during EDA and record them in `docs/decisions.md`.
+The proposed split reserves official validation studies for final testing.
+Never overwrite label files; save a new version.
+
+Data contents are ignored by Git, except this README, `.gitkeep` placeholders
+and `splits/*.json`. No split file exists yet.
