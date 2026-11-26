@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lordosis-mri"
+version = "0.1.0"
+description = "Direct lumbar lordosis angle regression from sagittal MRI."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy",
+    "pandas",
+    "SimpleITK",
+    "scikit-image",
+    "scikit-learn",
+    "scipy",
+    "matplotlib",
+    "pyyaml",
+    "tqdm",
+    "torch>=2.7",
+    "torchvision>=0.22",
+]
+
+[project.optional-dependencies]
+main = ["timm", "peft"]
+stretch = ["monai"]
+dev = ["pytest", "ruff", "jupyter", "ipykernel"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lordosis"]
+
+# Index configuration follows https://docs.astral.sh/uv/guides/integration/pytorch/
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cu128", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,17 @@
+# Generated from pyproject.toml core + extras; Colab supplies torch/torchvision.
+numpy
+pandas
+SimpleITK
+scikit-image
+scikit-learn
+scipy
+matplotlib
+pyyaml
+tqdm
+timm
+peft
+monai
+pytest
+ruff
+jupyter
+ipykernel

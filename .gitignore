@@ -1,0 +1,21 @@
+# Ignore data contents while keeping documented empty directories.
+/data/**
+!/data/**/
+!/data/**/.gitkeep
+!/data/README.md
+/outputs/
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
